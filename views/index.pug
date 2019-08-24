@@ -1,0 +1,18 @@
+extends layout 
+
+
+block layout-content
+  div.View.WelcomeView
+    h1.Banner Hack the Emotions
+    div.Message
+      div.Title
+        h3 Configure bots
+        h1 Microsot Azure
+      span.Details Access the Emotions
+    div.NavButtons
+      if isAuthenticated
+        a(href="/user")
+          div.NavButton Just dive in!
+      else
+        a(href="/login")
+          div.NavButton Chat Now
